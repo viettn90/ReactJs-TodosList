@@ -24,7 +24,7 @@ function App() {
   const [todosList, setTodosList] = useState([
     {text: "Learn more about ReactJs"},
     {text: "Do Homework"}
-  ])
+  ]) 
 
   // Add new Todo into TodoList
   const saveTodo = (text) => {
@@ -33,6 +33,8 @@ function App() {
     // Another written: const newTodos = [...todosList, {text}];
     setTodosList(newTodos);
   }
+
+  
 
     return (
       <div>
@@ -48,7 +50,7 @@ function App() {
           />
         </div>
         <div>
-          <TodosList todosList={todosList}/>
+          <TodosList todosList={todosList} setTodosList={setTodosList}/>
         </div>
 
       </div>
